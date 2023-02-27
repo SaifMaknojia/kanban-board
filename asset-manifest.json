@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Kanban-app/static/css/main.32020acd.chunk.css",
-    "main.js": "/Kanban-app/static/js/main.db6088a4.chunk.js",
-    "main.js.map": "/Kanban-app/static/js/main.db6088a4.chunk.js.map",
-    "runtime-main.js": "/Kanban-app/static/js/runtime-main.64120ecc.js",
-    "runtime-main.js.map": "/Kanban-app/static/js/runtime-main.64120ecc.js.map",
-    "static/css/2.b8e408b6.chunk.css": "/Kanban-app/static/css/2.b8e408b6.chunk.css",
-    "static/js/2.f36b7646.chunk.js": "/Kanban-app/static/js/2.f36b7646.chunk.js",
-    "static/js/2.f36b7646.chunk.js.map": "/Kanban-app/static/js/2.f36b7646.chunk.js.map",
-    "index.html": "/Kanban-app/index.html",
-    "static/css/2.b8e408b6.chunk.css.map": "/Kanban-app/static/css/2.b8e408b6.chunk.css.map",
-    "static/css/main.32020acd.chunk.css.map": "/Kanban-app/static/css/main.32020acd.chunk.css.map",
-    "static/js/2.f36b7646.chunk.js.LICENSE.txt": "/Kanban-app/static/js/2.f36b7646.chunk.js.LICENSE.txt"
+    "main.css": "/kanban-board/static/css/main.32020acd.chunk.css",
+    "main.js": "/kanban-board/static/js/main.db6088a4.chunk.js",
+    "main.js.map": "/kanban-board/static/js/main.db6088a4.chunk.js.map",
+    "runtime-main.js": "/kanban-board/static/js/runtime-main.1afc691b.js",
+    "runtime-main.js.map": "/kanban-board/static/js/runtime-main.1afc691b.js.map",
+    "static/css/2.b8e408b6.chunk.css": "/kanban-board/static/css/2.b8e408b6.chunk.css",
+    "static/js/2.f36b7646.chunk.js": "/kanban-board/static/js/2.f36b7646.chunk.js",
+    "static/js/2.f36b7646.chunk.js.map": "/kanban-board/static/js/2.f36b7646.chunk.js.map",
+    "index.html": "/kanban-board/index.html",
+    "static/css/2.b8e408b6.chunk.css.map": "/kanban-board/static/css/2.b8e408b6.chunk.css.map",
+    "static/css/main.32020acd.chunk.css.map": "/kanban-board/static/css/main.32020acd.chunk.css.map",
+    "static/js/2.f36b7646.chunk.js.LICENSE.txt": "/kanban-board/static/js/2.f36b7646.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.64120ecc.js",
+    "static/js/runtime-main.1afc691b.js",
     "static/css/2.b8e408b6.chunk.css",
     "static/js/2.f36b7646.chunk.js",
     "static/css/main.32020acd.chunk.css",

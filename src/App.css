@@ -5,8 +5,54 @@
   background: #f3f4f7;
 }
 
+.side-nav {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.side-nav > li {
+  list-style: none;
+  height: 45px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #253858;
+  transition: 0.3s ease-in-out;
+}
+
+.side-nav > li.selected {
+  background: #fdf2d8;
+  border-left: 10px solid #fea025;
+}
+
+.side-nav > li:hover {
+  background: #f3f5f7;
+}
+
+.side-nav .menu-label {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: #8993a4;
+  letter-spacing: 0;
+  font-weight: 500;
+  width: 100%;
+}
+
+.side-nav .menu-label .add-icon {
+  float: right;
+  font-size: 22px;
+  color: #ffa000;
+  cursor: pointer;
+}
+
+.side-nav .menu-label .add-icon:hover {
+  opacity: 0.9;
+}
+
 .lane {
-  max-height: calc(100% - 10px);
+  height: calc(100% - 10px);
   width: 275px;
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
@@ -14,9 +60,27 @@
   vertical-align: top;
 }
 
+.addlanecontainer {
+  height: calc(100% - 10px);
+  width: 150px;
+  margin: 0px 10px 0px 10px;
+  padding-bottom: 10px;
+}
+
+.addlane {
+  height: calc(100% - 20px);
+  width: 100%;
+  background: #deebff;
+  border-radius: 5px;
+  display: table;
+  text-align: center;
+}
+
 .lane-body {
   height: calc(100% - 50px);
   width: 100%;
+  /* background: #FAFBFC;
+  border: 1px solid #EBECF0; */
   border-radius: 5px;
 }
 
@@ -33,6 +97,14 @@
   overflow: auto;
 }
 
+.addlane-icon {
+  font-size: 60px;
+  color: #0065ff;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .lane-title {
   display: inline-block;
   width: 100%;
@@ -40,6 +112,11 @@
   font-size: 14px;
   cursor: text;
   color: #172b4d;
+}
+
+.lane-title i {
+  display: none;
+  float: right;
 }
 
 .lane-title:hover i {
@@ -51,8 +128,28 @@
   margin-bottom: 0;
 }
 
+.menu-icon {
+  left: 20px;
+  top: 22px;
+  font-size: 18px;
+  color: #172b4d;
+  cursor: pointer;
+}
+
 .display-none {
   display: none;
+}
+
+.labelkey {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 50%;
+  padding: 2px;
+  text-transform: uppercase;
 }
 
 .main-btn {
@@ -63,6 +160,75 @@
   padding: 7px 10px 7px 10px;
   color: white;
   transition: 0.3s ease-in-out;
+}
+
+.main-btn.yellow {
+  background: #ffa000;
+}
+
+.main-btn.grey {
+  background: #8993a4;
+}
+.main-btn.red {
+  background: #dc3545;
+}
+
+.main-btn.yellow:hover {
+  background: #ff8f00;
+}
+
+.main-btn.grey:hover {
+  background: #a5adba;
+}
+
+.main-btn.red:hover {
+  background: #bb2d3b;
+}
+
+.taskviewercontainer {
+  padding: 15px;
+}
+
+.tasktable {
+  margin: 15px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.tasktable thead {
+  width: 100%;
+}
+
+.tasktable tr {
+  border-bottom: 1px solid #c1c7d0;
+  height: 45px;
+  width: 100%;
+}
+
+.tasktable th {
+  border-bottom: 2px solid #505f79;
+  height: 45px;
+  color: #172b4d;
+}
+
+.tasktable tbody tr:hover {
+  background: #fffae6;
+}
+
+.tasktable .td {
+  color: #505f79;
+}
+
+.searchbox {
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  color: #172b4d;
+}
+
+.searchbox:focus {
+  outline: none;
 }
 
 .taskcard {
@@ -78,6 +244,16 @@
 .taskcard:hover {
   background: #fff9ea !important;
   border: 1px solid #ffe1bb;
+}
+
+.delete-icon {
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+
+.taskcard:hover .delete-icon {
+  font-size: 14px;
 }
 
 .taskcard .title {
@@ -98,7 +274,71 @@
   font-weight: 400;
 }
 
+.taskcard .duedate {
+  color: #8993a4;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.form-label {
+  color: #42526e;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.viewicon {
+  font-size: 18px;
+  color: #8993a4;
+  cursor: pointer;
+}
+
+.viewicon.selected {
+  color: #ffa000;
+}
+
 /* overiding bootstrap */
+
+.form-control {
+  font-size: 14px !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.add-button {
+  width: 100%;
+  padding: 2px;
+  text-align: center;
+  background: white;
+  border: 1px solid #ebecf0;
+  border-radius: 0.25rem;
+  margin-bottom: 5px;
+  color: #42526e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #ffa000;
+  color: white;
+}
+
+.lane-title-input {
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1.5px solid #9ea1ad;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lane-title-input.error {
+  border-color: #dc3545;
+  background: #f6d9dc;
+}
 
 .float-right {
   float: right;
